@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'; // Make sure to add the CSS file for styling
+import './footer.css'; // Make sure to add the CSS file for styling
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faInstagram, faPinterest, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
