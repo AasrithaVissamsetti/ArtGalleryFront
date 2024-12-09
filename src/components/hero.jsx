@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css'; // Importing CSS for the hero section
+import './hero.css'; // Importing CSS for the hero section
 import artImage from "../assets/front1.jpeg";  // Going up one level from 'components' to 'assets'
 
 
