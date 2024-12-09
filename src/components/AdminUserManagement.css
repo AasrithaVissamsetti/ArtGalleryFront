@@ -1,0 +1,179 @@
+/* AdminUserManagement.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure content takes full height */
+}
+
+/* Navbar Style */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Ensure navbar stays on top */
+}
+
+/* Sidebar Style */
+.sidebar {
+    position: fixed;
+    top: 60px; /* Adjust for navbar height */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 60px); /* Ensure sidebar doesn't overlap content */
+    background-color: #222;
+    color: white;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 500;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+.sidebar .logout-btn {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 260px; /* Create space for sidebar */
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #2f2f2f;
+    margin-top: 60px; /* Adjust top margin for the navbar */
+    z-index: 400; /* Ensure content stays above sidebar */
+    position: relative; /* Add position relative for z-index to work */
+}
+
+/* Heading Styling */
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    margin-top: 80px; /* Add margin-top to push it below the navbar */
+}
+
+/* Form Container */
+.form-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button[type="button"] {
+    background-color: #f44336;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+/* Table Styling */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 40px; /* Ensure the table isn't hidden under the navbar */
+    background-color: #333;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 200; /* Make sure table is on top of background */
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
+th {
+    background-color: #555;
+}
+
+td {
+    background-color: #444;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+button.edit-btn {
+    background-color: #e74c3c;
+}
+
+button.delete-btn {
+    background-color: #f44336;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Success and Error Messages */
+.success-message {
+    color: #e74c3c;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}

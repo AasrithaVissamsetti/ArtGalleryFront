@@ -1,0 +1,77 @@
+.curator-home-page {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    background-color: #1a1a1a; /* Dark background for the curator home */
+}
+
+.curator-home-content {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #333; /* Darker background for content */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 20px; /* Add some margin to prevent content from touching screen edges */
+}
+
+.curator-home-title {
+    font-size: 2rem;
+    color: #e74c3c; /* Red color for title to stand out */
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+}
+
+.curator-home-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #bdc3c7; /* Lighter gray text for description */
+    text-align: center; /* Center the description */
+}
+
+.curator-home-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the links */
+    gap: 20px; /* Add spacing between links */
+    margin-bottom: 20px;
+}
+
+.curator-home-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #555; /* Background color for the links */
+    transition: background 0.3s ease;
+}
+
+.curator-home-link:hover {
+    background-color: #e74c3c; /* Highlight color when hovering */
+}
+
+.logout-btn {
+    background-color: #e74c3c; /* Red background for the logout button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.error-message {
+    color: #e74c3c; /* Red color for error messages */
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}

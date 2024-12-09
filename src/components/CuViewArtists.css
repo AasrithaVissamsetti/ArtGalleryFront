@@ -1,0 +1,52 @@
+.view-artists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white; /* Dark grey background */
+    color: white; /* White text for contrast */
+    min-height: 100vh;
+    padding: 20px;
+    padding-top: 100px; /* Add padding to prevent heading from being covered by the navbar */
+    margin-left: 250px; /* Adjusted for the sidebar width */
+  }
+  
+  .artists-title {
+    font-size: 2.5rem;
+    color: black; /* Reddish color for title */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .artists-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%; /* Adjusted width for better alignment */
+    max-width: 1200px;
+  }
+  
+  .artist-card {
+    background-color: #444; /* Medium grey for card background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Black shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+  }
+  
+  .artist-name {
+    font-size: 1.5rem;
+    color: #e74c3c; /* Red for artist names */
+    margin-bottom: 10px;
+  }
+  
+  .artist-bio {
+    font-size: 1rem;
+    color: #ccc; /* Light grey for bios */
+  }
+  

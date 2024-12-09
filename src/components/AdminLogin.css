@@ -1,0 +1,116 @@
+/* General container styling */
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0d0d0d; /* Slightly darker background */
+    color: black;
+    margin: 0;
+}
+
+/* Card styling */
+.admin-login-card {
+    background-color: #262626; /* Darker card */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Title styling */
+.admin-login-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e60000; /* Green theme */
+}
+
+/* Form styling */
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input group */
+.admin-input-group label {
+    display: block;
+    font-weight: bold;
+    color: #e60000;
+    margin-bottom: 5px;
+}
+
+.admin-input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e60000;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.admin-input-group input:focus {
+    border-color: #e60000;
+    box-shadow: 0 0 8px #e60000;
+}
+
+/* Login button */
+.admin-login-btn {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-login-btn:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+/* Error message */
+.error-message {
+    background-color: #e60000;
+    color: black;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Signup link */
+.admin-signup-redirect {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.admin-signup-link {
+    color: #e60000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.admin-signup-link:hover {
+    color: #e60000;
+}
+
+/* Success message */
+.success-message {
+    background-color: #28a745; /* Green color for success */
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+

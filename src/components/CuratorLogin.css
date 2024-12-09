@@ -1,0 +1,103 @@
+/* General container styling */
+.curator-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff;
+    margin: 0;
+}
+  
+/* Card styling */
+.curator-login-card {
+    background-color: #333; /* Dark card */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+  
+/* Title styling */
+.curator-login-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e60000; /* Red theme */
+}
+  
+/* Form styling */
+.curator-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+/* Input group */
+.curator-input-group label {
+    display: block;
+    font-weight: bold;
+    color: #e60000;
+    margin-bottom: 5px;
+}
+  
+.curator-input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e60000;
+    background-color: #222;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+  
+.curator-input-group input:focus {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 8px #e60000;
+}
+  
+/* Login button */
+.curator-login-btn {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.curator-login-btn:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05);
+}
+  
+/* Error message */
+.error-message {
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+/* Signup link */
+.curator-signup-redirect {
+    margin-top: 10px;
+    color: #ccc;
+}
+  
+.curator-signup-link {
+    color: #e60000;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+.curator-signup-link:hover {
+    color: #ff4d4d;
+}

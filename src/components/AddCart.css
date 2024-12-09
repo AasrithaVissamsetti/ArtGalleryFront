@@ -1,0 +1,721 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add To Cart Page Styling */
+  .add-to-cart {
+    padding: 40px;
+    background-color: #111; /* Dark background */
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1100px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Title Styling */
+  .add-to-cart-title {
+    font-size: 3rem;
+    color: #ffffff; /* Red color for title */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #e60000;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  /* Product List Layout */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Align items in rows */
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  
+  /* Product Card Styling */
+  .product-card {
+    background: #fff;
+    color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px; /* Ensure all cards are the same width */
+    height: 350px; /* Fixed height for cards */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Ensures space between elements (image, text, button) */
+    margin: 10px;
+  }
+  
+  /* Product Card Hover Effect */
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(231, 31, 31, 0.3);
+  }
+  
+  /* Product Image Styling */
+  .product-image {
+    width: 100%;
+    height: 200px; /* Fixed height for product images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Product Title */
+  .product-card h3 {
+    font-size: 1.5rem;
+    color: #e60000; /* Red color for product title */
+    margin-bottom: 15px;
+  }
+  
+  /* Product Price */
+  .product-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .product-card button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Ensures the button fills the width of the card */
+    margin-top: auto; /* Pushes the button to the bottom of the card */
+    height: 45px; /* Ensure button has a fixed height */
+  }
+  
+  /* Button Hover Effect */
+  .product-card button:hover {
+    background: darkred;
+    transform: translateY(-2px);
+  }
+  
+  /* Cart Section */
+  .cart {
+    margin-top: 50px;
+    background: #222; /* Dark background for the cart */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    color: white; /* White text for better contrast */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Cart Title */
+  .cart-title {
+    font-size: 2.2rem;
+    color: #e60000; /* Red title for cart */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e60000; /* Subtle red underline */
+  }
+  
+  /* Cart List */
+  .cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Cart List Item */
+  .cart li {
+    font-size: 1.3rem;
+    color: white;
+    margin: 12px 0;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1); /* Lighter background for cart items */
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Cart Item Price */
+  .cart li span {
+    color: #e60000; /* Red color for price */
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  /* Cart Total Price */
+  .cart p {
+    font-size: 1.3rem;
+    color: #f2f2f2;
+    margin-top: 20px;
+  }
+  
+  .total-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e60000; /* Red color for total amount */
+    margin-top: 20px;
+  }
+  /* Product Image Styling */
+  .product-image {
+    width: 100%;
+    height: 200px; /* Fixed height for product images */
+    object-fit: contain; /* Ensures the image is fully visible without cropping */
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  /* Add To Cart Page Styling */
+  .add-to-cart {
+    padding: 40px;
+    background-color: #111; /* Dark background */
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1100px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    display: flex; /* Display product list and cart side by side */
+    justify-content: space-between; /* Space between the two sections */
+    gap: 30px; /* Gap between the product list and cart */
+  }
+  
+  /* Product List Layout */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    width: 70%; /* Occupy 70% of the space */
+  }
+  
+  /* Cart Section */
+  .cart {
+    width: 30%; /* Occupy 30% of the space */
+    margin-top: 50px;
+    background: #222; /* Dark background for the cart */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Cart Title */
+  .cart-title {
+    font-size: 2.2rem;
+    color: #e60000; /* Red title for cart */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e60000;
+  }
+  /* Add To Cart Page Styling */
+  .add-to-cart {
+    padding: 40px;
+    background-color: #111; /* Dark background */
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1100px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    display: flex; /* Display product list and cart side by side */
+    justify-content: space-between; /* Space between the two sections */
+    gap: 30px; /* Gap between the product list and cart */
+  }
+  
+  /* Product List Layout */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 30px; /* Space between product cards */
+    margin-top: 40px;
+    width: 70%; /* Occupy 70% of the space */
+  }
+  
+  /* Product Card Styling */
+  .product-card {
+    background: #fff;
+    color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Ensures space between elements (image, text, button) */
+    margin: 10px;
+    width: 100%; /* Ensure the product card occupies full space */
+  }
+  
+  /* Product Image Styling */
+  .product-image {
+    width: 100%;
+    height: 200px; /* Fixed height for product images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Cart Section */
+  .cart {
+    width: 30%; /* Occupy 30% of the space */
+    margin-top: 50px;
+    background: #222; /* Dark background for the cart */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  }
+  /* Add To Cart Page Styling */
+  .add-to-cart {
+    padding: 40px;
+    background-color: #111; /* Dark background */
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1100px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    display: flex; /* Display product list and cart side by side */
+    justify-content: space-between; /* Space between the two sections */
+    gap: 30px; /* Gap between the product list and cart */
+  }
+  
+  /* Product List Layout (2 products per row) */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 30px; /* Space between product cards */
+    margin-top: 40px;
+    width: 70%; /* Occupy 70% of the space */
+    justify-items: center; /* Centers products within the grid */
+  }
+  
+  /* Product Card Styling */
+  .product-card {
+    background: #fff;
+    color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Ensures space between elements (image, text, button) */
+    width: 100%; /* Ensure the product card occupies full space */
+    max-width: 300px; /* Ensures a fixed max width for product cards */
+  }
+  
+  /* Product Image Styling */
+  .product-image {
+    width: 100%;
+    height: 200px; /* Fixed height for product images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Product Title Styling */
+  .product-card h3 {
+    font-size: 1.5rem;
+    color: #e60000; /* Red color for product title */
+    margin-bottom: 15px;
+  }
+  
+  /* Product Price Styling */
+  .product-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .product-card button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Ensures the button fills the width of the card */
+    margin-top: auto; /* Pushes the button to the bottom of the card */
+    height: 45px; /* Ensure button has a fixed height */
+  }
+  
+  /* Button Hover Effect */
+  .product-card button:hover {
+    background: darkred;
+    transform: translateY(-2px);
+  }
+  
+  /* Cart Section */
+  .cart {
+    width: 30%; /* Occupy 30% of the space */
+    margin-top: 50px;
+    background: #222; /* Dark background for the cart */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Cart Title Styling */
+  .cart-title {
+    font-size: 2.2rem;
+    color: #e60000; /* Red title for cart */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e60000; /* Subtle red underline */
+  }
+  
+  /* Cart List Styling */
+  .cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Cart List Item Styling */
+  .cart li {
+    font-size: 1.3rem;
+    color: white;
+    margin: 12px 0;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1); /* Lighter background for cart items */
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Cart Item Price Styling */
+  .cart li span {
+    color: #e60000; /* Red color for price */
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  /* Cart Total Price Styling */
+  .cart p {
+    font-size: 1.3rem;
+    color: #f2f2f2;
+    margin-top: 20px;
+  }
+  
+  .total-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e60000; /* Red color for total amount */
+    margin-top: 20px;
+  }
+  /* Product Image Styling */
+  .product-image {
+    width: 100%;
+    height: 200px; /* Fixed height for product images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space between the image and the rest of the content */
+    padding: 10px; /* Adds padding inside the image container */
+  }
+  
+  /* Product List Layout (2 products per row) */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 30px; /* Space between product cards */
+    margin-top: 40px;
+    width: 70%; /* Occupy 70% of the space */
+    justify-items: center; /* Centers products within the grid */
+  }
+  /* Product List Layout (2 products per row) */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 30px; /* Space between product cards */
+    margin-top: 40px;
+    justify-items: center; /* Centers products within the grid */
+  }
+  
+  /* Product Card Styling */
+  .product-card {
+    background: #fff;
+    color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px; /* Ensure all cards are the same width */
+    height: 350px; /* Fixed height for cards */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Ensures space between elements (image, text, button) */
+    margin: 10px;
+  }
+  
+  /* Product Image Styling */
+  .product-image {
+    width: 100%;
+    height: 200px; /* Fixed height for product images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space between the image and the next content */
+  }
+  /* Add To Cart Page Styling */
+  .add-to-cart {
+    padding: 40px;
+    background-color: #111; /* Dark background */
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1200px; /* Increased max-width to allow more space */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+  }
+  
+  /* Title Styling */
+  .add-to-cart-title {
+    font-size: 3rem;
+    color: #ffffff; /* Red color for title */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid #e60000;
+    padding-bottom: 10px;
+    text-align: center; /* Center the title text */
+    width: 100%; /* Ensures the title takes up the full width */
+    display: inline-block; /* Makes the title an inline-block */
+  }
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add To Cart Page Styling */
+  .add-to-cart {
+    padding: 40px;
+    background-color: #111; /* Dark background */
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1100px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align product list and cart */
+    gap: 30px; /* Space between the product list and cart */
+    flex-direction: row; /* Align elements horizontally */
+  }
+  
+  /* Product List Layout */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 30px; /* Space between product cards */
+    margin-top: 40px;
+    width: 70%; /* Occupy 70% of the space */
+    justify-items: center; /* Centers products within the grid */
+  }
+  
+  /* Cart Section */
+  .cart {
+    width: 30%; /* Occupy 30% of the space */
+    margin-top: 50px;
+    background: #222; /* Dark background for the cart */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    position: sticky; /* Make cart stick to the top when scrolling */
+    top: 100px; /* Adjust the top offset */
+  }
+  
+  /* Cart Title */
+  .cart-title {
+    font-size: 2.2rem;
+    color: #e60000; /* Red title for cart */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e60000; /* Subtle red underline */
+  }
+  
+  /* Cart List Styling */
+  .cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Cart List Item Styling */
+  .cart li {
+    font-size: 1.3rem;
+    color: white;
+    margin: 12px 0;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1); /* Lighter background for cart items */
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Cart Item Price Styling */
+  .cart li span {
+    color: #e60000; /* Red color for price */
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  /* Cart Total Price Styling */
+  .cart p {
+    font-size: 1.3rem;
+    color: #f2f2f2;
+    margin-top: 20px;
+  }
+  
+  .total-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e60000; /* Red color for total amount */
+    margin-top: 20px;
+  }
+  /* Add To Cart Page Styling */
+  .add-to-cart {
+    padding: 40px;
+    background-color: #111; /* Dark background */
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1200px; /* Increased max-width to allow more space */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 30px;
+  }
+  
+  /* Title Styling */
+  .add-to-cart-title {
+    font-size: 2.5rem;
+    color: #e60000; /* Red title for Add to Cart */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px; /* Space between title and product list */
+    border-bottom: 3px solid #e60000; /* Red underline for title */
+    align-self: center; /* Center title horizontally */
+  }
+  
+  /* Product List Layout (Products on the left) */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 30px; /* Space between product cards */
+    margin-top: 40px;
+    width: 70%; /* Occupy 70% of the space */
+    justify-items: center; /* Centers products within the grid */
+  }
+  
+  /* Cart Section (Position on the right side) */
+  .cart {
+    width: 30%; /* Occupy 30% of the space */
+    margin-top: 0; /* Remove margin-top to ensure it's aligned with the products */
+    background: #222; /* Dark background for the cart */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: left;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column; /* Ensure content is stacked vertically */
+    align-items: flex-start; /* Align content to the left side */
+  }
+  
+  /* Cart Title Styling */
+  .cart-title {
+    font-size: 2.2rem;
+    color: #e60000; /* Red title for cart */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e60000; /* Subtle red underline */
+  }
+  
+  /* Product Card Styling */
+  .product-card {
+    background: #fff;
+    color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Ensures space between elements (image, text, button) */
+    margin: 10px;
+    width: 100%; /* Ensure the product card occupies full space */
+    max-width: 300px; /* Ensures a fixed max width for product cards */
+  }
+  
+  /* Cart Item Price Styling */
+  .cart li span {
+    color: #e60000; /* Red color for price */
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  /* Cart Total Price Styling */
+  .cart p {
+    font-size: 1.3rem;
+    color: #f2f2f2;
+    margin-top: 20px;
+  }
+  
+  .total-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e60000; /* Red color for total amount */
+    margin-top: 20px;
+  }
+  /* Product Image Styling */
+  .product-image {
+    width: 100%;
+    height: 200px; /* Fixed height for product images */
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space between the image and the rest of the content */
+    padding: 10px; /* Adds padding inside the image container */
+  }

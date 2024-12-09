@@ -1,0 +1,93 @@
+.manage-artworks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A9A9A9; /* Grey background */
+    min-height: 100vh;
+    padding: 20px;
+    padding-top: 80px;
+    margin-left: 250px; /* Adjust based on the sidebar width */
+}
+
+.artworks-title {
+    font-size: 2.5rem;
+    color: black; /* Red color */
+    margin-bottom: 20px;
+}
+
+.add-artwork-form {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.add-artwork-form h2 {
+    font-size: 1.5rem;
+    color: #333; /* Black text */
+    margin-bottom: 10px;
+}
+
+.add-artwork-form input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-artwork-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e74c3c; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-artwork-form button:hover {
+    background-color: #c0392b;
+}
+
+.artwork-list {
+    width: 80%;
+    max-width: 800px;
+}
+
+.artwork-list h2 {
+    font-size: 1.8rem;
+    color: #333; /* Black text */
+    margin-bottom: 20px;
+}
+
+.artwork-item {
+    background-color: #fff; /* White background */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.artwork-item span {
+    font-size: 1rem;
+    color: #333; /* Black text */
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #ff4f4f; /* Bright red button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #e74c3c;
+}

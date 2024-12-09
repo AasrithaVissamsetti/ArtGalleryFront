@@ -1,0 +1,109 @@
+/* General container styling */
+.customer-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the container takes full height */
+  background-color: #1a1a1a; /* Dark background */
+  color: #fff;
+  margin: 0;
+}
+
+/* Card styling */
+.customer-signup-card {
+  background-color: #333; /* Dark card */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  width: 100%;
+  max-width: 400px; /* Limit card width */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding doesn't affect card size */
+}
+
+/* Title styling */
+.customer-signup-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e60000; /* Red theme */
+}
+
+/* Form styling */
+.customer-signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input group */
+.customer-input-group label {
+  display: block;
+  font-weight: bold;
+  color: #e60000;
+  margin-bottom: 5px;
+}
+
+.customer-input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e60000;
+  background-color: #222;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.customer-input-group input:focus {
+  border-color: #ff4d4d;
+  box-shadow: 0 0 8px #e60000;
+}
+
+/* Signup button */
+.customer-signup-btn {
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.customer-signup-btn:hover {
+  background-color: #ff4d4d;
+  transform: scale(1.05);
+}
+
+/* Error message */
+.error-message {
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Login link */
+.customer-login-redirect {
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.customer-login-link {
+  color: #e60000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.customer-login-link:hover {
+  color: #ff4d4d;
+}
+/* Container for Signup Page */
+.customer-signup-container {
+  margin-top: 80px; /* Push the content below the navbar */
+  padding: 20px; /* Optional padding for spacing */
+}

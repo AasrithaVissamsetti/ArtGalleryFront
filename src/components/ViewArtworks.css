@@ -1,0 +1,86 @@
+/* Overall Page Styling */
+.artworks-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a; /* Black background */
+    color: white;
+    padding: 50px 20px;
+    min-height: 100vh;
+    padding-left: 300px;
+  }
+  
+  .page-title {
+    font-size: 3rem;
+    color: #e60000; /* Red theme */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  /* Artworks Gallery Layout */
+  .artworks-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Each Artwork Card */
+  .artwork-card {
+    background-color: #333; /* Dark background for cards */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .artwork-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Image Styling */
+  .artwork-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Ensures images are cropped nicely */
+    transition: opacity 0.3s ease;
+  }
+  
+  .artwork-image:hover {
+    opacity: 0.8;
+  }
+  
+  /* Info Section of Artwork */
+  .artwork-info {
+    padding: 20px;
+  }
+  
+  .artwork-title {
+    font-size: 1.5rem;
+    color: #e60000; /* Red theme */
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  
+  .artwork-description {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .page-title {
+      font-size: 2.5rem;
+    }
+  
+    .artworks-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  

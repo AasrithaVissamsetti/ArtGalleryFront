@@ -1,0 +1,68 @@
+.about-us-container {
+    background-color: black;
+    color: whitesmoke;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px whitesmoke(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-us-heading {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .about-us-paragraph {
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-top: 20px;
+    padding: 0 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .art-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .art-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animation for About Us section */
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

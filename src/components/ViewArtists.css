@@ -1,0 +1,81 @@
+.view-artists-layout {
+    display: flex;
+    margin-top: 70px; /* Adjust this value based on the height of your navbar */
+  }
+  
+  .artists-container {
+    margin-left: 250px; /* Space for the sidebar */
+    padding: 40px;
+    text-align: center;
+    background-color: #282c34; /* Dark background */
+    color: white;
+    min-height: 100vh; /* Ensures it spans the full height of the viewport */
+    overflow: hidden;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #e60000; /* Red title */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Gallery layout */
+  .artists-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  /* Artist card styles */
+  .artist-card {
+    background-color: #222; /* Dark background for cards */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 2px solid #e60000; /* Red border around the cards */
+  }
+  
+  .artist-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+  }
+  
+  /* Image styles */
+  .artist-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #e60000; /* Red border under image */
+    transition: opacity 0.3s ease;
+  }
+  
+  .artist-image:hover {
+    opacity: 0.8;
+  }
+  
+  /* Artist information */
+  .artist-info {
+    padding: 20px;
+    background-color: #333; /* Dark background for the info */
+  }
+  
+  .artist-name {
+    font-size: 1.8rem;
+    color: #e60000; /* Red name text */
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .artist-description {
+    font-size: 1rem;
+    color: #ccc; /* Light grey text for description */
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  

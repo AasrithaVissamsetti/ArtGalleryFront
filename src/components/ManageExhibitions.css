@@ -1,0 +1,90 @@
+.manage-exhibitions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A9A9A9;
+    min-height: 100vh;
+    padding: 20px;
+    padding-top: 80px;
+    margin-left: 250px; /* Adjusted to the width of the sidebar */
+  }
+  
+  .exhibition-title {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 30px;
+  }
+  
+  .add-exhibition-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 300px;
+  }
+  
+  .add-exhibition-form input {
+    width: 100%;
+    padding: 5px;
+    margin: 9px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-exhibition-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px; /* Reduced padding */
+    margin: 8px 0;
+  }
+  
+  .add-exhibition-form button:hover {
+    background-color: #c0392b;
+  }
+  
+  .exhibition-list {
+    width: 80%;
+    max-width: 1000px;
+  }
+  
+  .exhibition-list h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .exhibition-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .exhibition-item span {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .delete-btn {
+    padding: 5px 10px;
+    background-color: #ff4f4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e74c3c;
+  }
+  
